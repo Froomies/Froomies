@@ -60,24 +60,23 @@
       <div class="row">
         <div class="col-lg-6">
           <h1 class="big-heading">Meet Your Future Fellow NYU Roommates</h1>
-          <form id="myForm" target="_self" onsubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdh7Pfq-wrmNAf_k9ux6_TKQkWN-VdPnIIlWFf_UKbDlYTtAw/formResponse">
-          <!-- <form id="myForm" target="_self" action="#" method="post" > -->
+          <form id="myForm" target="_self" onsubmit="return postToGoogle();" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSdzN3w7ZgZITmfTQQWQgJJvTL8rPXEE6L6b2RoD4Mfa6__W1A/formResponse">
             <div class="name">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <input type="text" id="firstname" class="form-control" required placeholder="First Name (required)" name="entry.438200656" />
+                  <input type="text" id="firstname" class="form-control" required placeholder="First Name (required)" name="entry.832960177" />
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                  <input type="text" id="lastname" class="form-control" placeholder="Last Name (optional)" name="entry.1603123021" />
+                  <input type="text" id="lastname" class="form-control" placeholder="Last Name (optional)" name="entry.1671975197" />
                 </div>
               </div>
             </div>
             <br />
             <div class="group">
-              <input id="emailField" class="form-control" pattern=".+@nyu.edu"  type="email" required placeholder="example@nyu.edu (required)" name="entry.627362502" />
+              <input id="emailField" class="form-control" pattern=".+@nyu.edu"  type="email" required placeholder="example@nyu.edu (required)" name="entry.344857549" />
             </div>
             <br />
-            <!-- <button type="button" class="btn btn-light btn-lg btn-block join-btn" type="submit" name="button">Join</button> -->
+
             <input class="btn btn-light btn-lg btn-block join-btn" type="submit" value="Join" name="button">
           </form>
 
@@ -104,11 +103,12 @@
                 document.getElementById("var-no1").innerHTML = curr_no;
                 document.getElementById("var-no2").innerHTML = curr_no;
 
-                url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdh7Pfq-wrmNAf_k9ux6_TKQkWN-VdPnIIlWFf_UKbDlYTtAw/formResponse",
+                url: "https://docs.google.com/forms/u/4/d/e/1FAIpQLSdzN3w7ZgZITmfTQQWQgJJvTL8rPXEE6L6b2RoD4Mfa6__W1A/formResponse",
                 data: {
-                  "entry.438200656": field1,
-                  "entry.1603123021": field2,
-                  "entry.627362502": field3,
+                  "entry.832960177": field1,
+                  "entry.1671975197": field2,
+                  "entry.344857549": field3,
+
                 },
                 type: "POST",
                 dataType: "xml",
@@ -349,6 +349,7 @@
       <i class="fab fa-twitter footer-icon"></i>
       <i class="fab fa-linkedin footer-icon"></i>
       <i class="fab fa-medium-m footer-icon"></i>
+      <p>Not Affiliated with NYU</p>
       <p>© Copyright 2021 Froomies</p>
     </div>
   </footer>
