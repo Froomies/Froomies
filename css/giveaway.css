@@ -28,6 +28,11 @@ body {
 }
 
 /* Navigation Bar */
+.purpleMenu{
+  color: #56068C;
+  transform: scale(1.3);
+}
+
 .navbar {
   padding-top: 0;
   padding-left: 0;
@@ -295,6 +300,14 @@ body {
   color: black;
 }
 
+.footerTerms{
+  color: grey;
+}
+
+.footerTerms:hover{
+  color: grey;
+}
+
 .contact-p {
   font-weight: 700;
 }
@@ -316,8 +329,4 @@ body {
 
 #ways2 {
   text-align: center;
-}
-.purpleMenu{
-  color: #56068C;
-  transform: scale(1.3);
 }

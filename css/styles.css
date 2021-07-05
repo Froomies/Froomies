@@ -324,6 +324,14 @@ input {
   color: black;
 }
 
+.footerTerms{
+  color: grey;
+}
+
+.footerTerms:hover{
+  color: grey;
+}
+
 .contact-p {
   font-weight: 700;
 }

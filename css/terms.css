@@ -1,0 +1,136 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  /* text-align: center; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#title {
+  padding: 1% 11% 0.5% 11%;
+}
+
+.colored-section {
+  background: linear-gradient(107.56deg, rgba(86, 6, 140, 0.4) 11.76%, rgba(41, 3, 67, 0.24) 58.96%, rgba(86, 6, 140, 0.4) 100%), #FFFFFF;
+}
+
+/* Navigation Bar */
+.purpleMenu{
+  color: #56068C;
+  transform: scale(1.3);
+}
+
+.navbar {
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #56068c;
+}
+
+.navbar-brand:hover {
+  color: #56068c;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #56068c;
+}
+
+.nav-link:hover {
+  color: #56068c;
+}
+
+.link {
+  cursor: pointer;
+  position: relative;
+  white-space: nowrap;
+}
+
+.link::before,
+.link::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  top: 70%;
+  left: 0;
+  pointer-events: none;
+}
+
+.link::before {
+  content: '';
+  /* show by default */
+}
+
+.link--metis::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.3s;
+}
+
+.link--metis:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 2);
+  color: #56068c;
+}
+
+.allSection{
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.mainHeading{
+  font-weight: bolder;
+}
+
+.subHeading{
+
+}
+
+p{
+
+}
+
+/* footer */
+#footer .container-fluid {
+  padding: 2% 10% 2% 10%;
+  text-align: center;
+  background-color: #F5F5F7;
+}
+
+.footer-icon {
+  padding: 2% 1.4%;
+  transform: scale(1.2);
+  color: black;
+}
+
+.footer-anchor {
+  color: black;
+}
+
+.footer-mail {
+  color: #a71bad;
+}
+
+.footer-mail:hover {
+  color: #56068c;
+}
+
+.footerTerms{
+  color: grey;
+}
+
+.footerTerms:hover{
+  color: grey;
+}

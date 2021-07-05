@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Exo 2', sans-serif; */
@@ -20,6 +24,11 @@ body {
 }
 
 /* Navigation Bar */
+.purpleMenu{
+  color: #56068C;
+  transform: scale(1.3);
+}
+
 .navbar {
   padding-top: 0;
   padding-left: 0;
@@ -435,11 +444,10 @@ body {
   color: #56068c;
 }
 
-html {
-  scroll-behavior: smooth;
+.footerTerms{
+  color: grey;
 }
 
-.purpleMenu{
-  color: #56068C;
-  transform: scale(1.3);
+.footerTerms:hover{
+  color: grey;
 }
