@@ -254,6 +254,12 @@ body {
   color: #AB5EE0;
 }
 
+.termsApplied{
+  position: absolute;
+  right: 20px;
+  margin-top: 40px;
+}
+
 /* .findTagline{
   color: #fff;
   font-weight: 600;
