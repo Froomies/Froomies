@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <meta content="width=device-width, initial-scale=1" name="viewport" /> -->
+  <meta name="viewport" content="width=1024">
+  <title>Campus Friends</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;900&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/events.css" />
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/67e5f42ef4.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3WGEZG3M9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-L3WGEZG3M9');
+  </script>
+</head>
+
+<body>
+  <section class="colored-section" id="title">
+    <div class="container-fluid container1">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/"> <span class="navbar-text">Campus Friends</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fas fa-bars purpleMenu"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link link link--metis" href="/about.html"><span class="navbar-text">About Us</span> <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link link--metis" href="/giveaway.html"> <span class="navbar-text">Giveaway</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link link--metis" href="/events.html"> <span class="navbar-text">Events</span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link link--metis" href="#footer"> <span class="navbar-text">Contact Us</span> </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      </div>
+
+
+      <div class="container-fluid container2">
+        <div class="row eventRow">
+          <div class="col-lg-7">
+            <img class="eventTwoImg" src="images/eventTwo.jpeg" alt="eventTwo.jpeg">
+            <!-- <h1>NYU’s Back to Campus</h1>
+            <h3>MEET OTHER STUDENTS + INTERNS</h3>
+
+            <h5>Sep. 5</h5>
+
+            <h5>Washington Square Park, NY</h5> -->
+          </div>
+          <div class="col-lg-5">
+            <form id="myForm" target="_self" onsubmit="return postToGoogle();" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSckGO5J4_Dxdg_q-RpFEOAkFypkVOIKeN-lyspNe8u-ouIngQ/formResponse" class="form-signin registerForm">
+
+              <input type="text" id="firstname" name="entry.2030046524" class="form-control shadow-none" placeholder="First Name" required autofocus><br>
+              <input type="text" id="lastname" name="entry.715891237" class="form-control shadow-none" required placeholder="Last Name"><br>
+              <input type="email" id="emailField" name="entry.31353144" class="form-control shadow-none" pattern=".+@nyu.edu" placeholder="NYU Email" required>
+<br>
+              <button class="btn btn-lg btn-primary btn-block btnRegister" type="submit">Register</button>
+
+            </form>
+            <script>
+              function postToGoogle() {
+                var field1 = $("#firstname").val();
+                var field2 = $("#lastname").val();
+                var field3 = $("#emailField").val();
+                // console.log(field3);
+                // var field4 = "event sign up";
+
+                $.ajax({
+
+                  var curr_no = parseInt(document.getElementById("var-no1").innerHTML);
+                  curr_no = curr_no + 1;
+                  document.getElementById("var-no1").innerHTML = curr_no;
+                  document.getElementById("var-no2").innerHTML = curr_no;
+
+                  url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSckGO5J4_Dxdg_q-RpFEOAkFypkVOIKeN-lyspNe8u-ouIngQ/formResponse",
+                  data: {
+                    "entry.2030046524": field1,
+                    "entry.715891237": field2,
+                    "entry.31353144": field3,
+                    // "entry.1149395818": field4,
+                  },
+                  type: "POST",
+                  dataType: "xml",
+                  success: function() {
+                    alert("Form Data Submitted")
+                    $("#no-msg").hide();
+                    $("#success-msg").show();
+
+                  },
+                  error: function(x, y, z) {
+                    document.getElementById("emailField").value = "";
+                    document.getElementById("firstname").value = "";
+                    document.getElementById("lastname").value = "";
+
+                    $("#success-msg").show();
+                    $("#no-msg").hide();
+
+                    function success() {
+                      $("#success-msg").hide();
+                    }
+
+                    setTimeout(success, 4000);
+
+
+                  },
+                });
+
+                return false;
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+<hr class="horizontal-rule">
+  <!-- More information section -->
+
+  <div class="container-fluid moreInfoContainer">
+    <div class="row">
+      <div class="col-lg-9 moreInfoLeftPart">
+        <p><strong>Campus friends is hosting its second in person event “NYU’s back to campus” for all NYU students to meet and familiarize themselves to the city! <br><br> Doesn’t matter if you are an incoming student or a returning student, join us for a evening filled with free food and amazing conversations with your fellow NYU students!</strong></p><br>
+        <h5>About this event</h5>
+        <p>Meet other NYU students, have some food, make plans, and enjoy the evening! All on us</p><br>
+        <p>Location: TBA</p><br>
+        <p>Join NYU Slack Community to virtually connect with other NYU students: <br> https://join.slack.com/t/nyucommunities/signup</p>
+      </div>
+      <div class="col-lg-3 moreInfoRightPart">
+        <p>Date and time</p>
+        <p>Sun, September 5th, 2021 <br> 2:00 PM – 6:00 PM EDT</p>
+        <br>
+        <br>
+        <p>Location</p>
+        <p>TBA</p>
+      </div>
+    </div>
+  </div>
+
+<hr class="horizontal-rule">
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+      <a class="footer-anchor" class="anchor-tag" href="https://twitter.com/SridharNitya/status/1409191259424628738"><i class="fab fa-twitter footer-icon"></i></a>
+      <a class="footer-anchor" href="https://www.linkedin.com/company/campusfriends/?viewAsMember=true"><i class="fab fa-linkedin footer-icon"></i></a>
+      <a class="footer-anchor" href="https://www.instagram.com/nyucampusfriends/"><i class="fab fa-instagram footer-icon"></i></a>
+
+      <p class="footer-p">Not Affiliated with NYU</p>
+      <p class="footer-p">© Copyright 2021 Campus Friends</p>
+      <p class="footer-p contact-p"><em>Contact us at </em><a class="footer-mail" href="mailto: yourcampusfriends@gmail.com"><em>yourcampusfriends@gmail.com</em></a></p>
+      <p></p>
+      <a class="footerTerms" href="/terms.html">
+        <p>Terms and Conditions</p>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
