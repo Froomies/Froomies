@@ -9,7 +9,7 @@ body {
 }
 
 #title {
-  padding: 1% 11% 0.5% 11%;
+  padding: 1% 9% 0.5% 11%;
 }
 
 .container-fluid {
@@ -46,11 +46,11 @@ body {
 }
 
 .nav-item {
-  padding: 0 18px;
+  padding: 0 12px;
 }
 
 .nav-link {
-  font-size: 1.2rem;
+  font-size: 1.07rem;
   color: #56068c;
 }
 
