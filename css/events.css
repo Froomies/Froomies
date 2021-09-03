@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   } */
 
   #title{
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
 
 #title .container1{
@@ -122,16 +122,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .eventTwoImg{
   object-fit: contain;
-  width: 80%;
+  width: 45%;
 }
 
 .eventRow{
-  background-color:#56068c;
+  /* background-color:#56068c; */
+  background-color: #560787;
 
 }
 
 .registerForm{
-
   width: 70%;
   margin: 50px 0 0 0;
 }
@@ -143,9 +143,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btnRegister:hover{
-  background-color: #56068C;
-  border-color: #56068C;
-  color: #fff;
+  background-color: #db3e5c;
+  border-color: #db3e5c;
+  color: black;
+}
+
+.social-icon {
+  padding: 2% 1.4%;
+  transform: scale(1.7);
+  color: #a71bad;
+}
+
+.social-anchor {
+  color: black;
 }
 
 /* more information section */
@@ -170,21 +180,6 @@ h1, h2, h3, h4, h5, h6 {
 .moreInfoRightPart{
   text-align: left;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
